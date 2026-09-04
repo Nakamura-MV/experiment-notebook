@@ -1,0 +1,24 @@
+{
+  "id": "./",
+  "name": "電子実験ノート",
+  "short_name": "実験ノート",
+  "description": "実験記録を時系列で保存する個人用ノート",
+  "lang": "ja",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/icon-192-v2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512-v2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#entry-list p {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+}
+
+#entry-list span {
+    white-space: pre-wrap;
+}
+
+.entry-content {
+    min-width: 0;
+}
+
+.entry-content small {
+    display: block;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.version-history {
+    margin-top: 0.75rem;
+    padding-left: 0.9rem;
+}
+
+.version-history summary {
+    cursor: pointer;
+    color: #555;
+}
+
+.version-history ol {
+    padding-left: 1.5rem;
+}
+
+.version-history li + li {
+    margin-top: 0.75rem;
+}
+
+.version-history-body {
+    margin-top: 0.25rem;
+    padding-left: 0.5rem;
+    background-color: #f5f5f5;
+    white-space: pre-wrap;
+}
+
+.version-history-time {
+    margin-top: 0.25rem;
+    color: #666;
+    font-size: 0.85rem;
+}
+
+input[type="datetime-local"] {
+    max-width: 20rem;
+    margin-bottom: 0.5rem;
+}
+
+.danger-button {
+    color: #b00020;
+}
+
+#page-list {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+#page-list li + li {
+    margin-top: 1rem;
+}
+
+#page-list button {
+    appearance: none;
+    padding: 0 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-size: 1.25rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+#page-list button:hover {
+    text-decoration: underline;
+}
+
+#page-list button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+#create-page-button {
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    margin: 0.25rem 0.25rem 0.25rem 0;
+    font: inherit;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.home-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.home-header h1 {
+    margin-right: auto;
+}
+
+.home-data-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.home-data-actions button {
+    padding: 0.35rem 0.6rem;
+    font: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.page-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-actions button {
+    min-height: 2rem;
+    padding: 0.25rem 0.5rem;
+    font: inherit;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+#page-title-status {
+    display: none;
+}
+
+#experiment-title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+    font-weight: bold;
+    line-height: 1.2;
+}
+#experiment-title:focus {
+    outline: none;
+    border-bottom-color: #666;
+}
+
+#add-entry-button,
+.entry-edit-actions button {
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    font: inherit;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+.entry-edit-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .entry-content > span {
+        border-radius: 0.1rem;
+        transition: background-color 0.1s;
+    }
+
+    .entry-content > span:active {
+        background-color: #eeeeee;
+    }
+}
